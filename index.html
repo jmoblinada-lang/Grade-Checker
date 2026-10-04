@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <aside class="hero">
+        <p class="course"></p>
+        <div>
+          <h1>Grade<br />Checker</h1>
+          <p class="lead">
+            Type in your name and score, confirm, and see exactly where you
+            stand.
+          </p>
+          <button id="startBtn" class="btn" type="button">Start</button>
+        </div>
+      </aside>
+
+      <section class="panel" aria-live="polite">
+        <div class="card" id="card" data-state="idle">
+          <div class="dial">
+            <svg viewBox="0 0 220 220" role="img" aria-label="Score dial">
+              <circle class="track" cx="110" cy="110" r="94"></circle>
+              <circle class="arc" id="arc" cx="110" cy="110" r="94"></circle>
+            </svg>
+            <div class="dial-text">
+              <span id="outScore" class="big">?</span>
+              <span class="out-of">out of 100</span>
+            </div>
+          </div>
+
+          <p id="outRemark" class="remark">Waiting for your score</p>
+          <p id="outName" class="name">Press Start to begin</p>
+        </div>
+
+        <h2>Grading scale</h2>
+        <ul class="scale">
+          <li class="tile excellent">
+            <strong>90 - 100</strong><span>Excellent</span>
+          </li>
+          <li class="tile passed">
+            <strong>75 - 89</strong><span>Passed</span>
+          </li>
+          <li class="tile failed">
+            <strong>Below 75</strong><span>Failed</span>
+          </li>
+          <li class="tile invalid">
+            <strong>Anything else</strong><span>Invalid score</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
