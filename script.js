@@ -1,5 +1,5 @@
-const welcomeMessage = "Hello Welcome To My Website";
-const invalidNameMessage = "Invalid Name Input, Please Try Again";
+const welcomeMessage = "Hello Welcome To Grade Checker Website";
+const invalidNameMessage = "Name cannot be empty, Please Try Again";
 const thankYouMessage = "Program cancelled, Thank you for using this website";
 
 const startBtn = document.getElementById("startBtn");
